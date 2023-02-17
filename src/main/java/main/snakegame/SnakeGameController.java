@@ -1,4 +1,4 @@
-package main.snakegameproject;
+package main.snakegame;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

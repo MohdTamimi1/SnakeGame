@@ -3,6 +3,6 @@ module main.snakegameproject {
     requires javafx.fxml;
 
 
-    opens main.snakegameproject to javafx.fxml;
-    exports main.snakegameproject;
+    opens main.snakegame to javafx.fxml;
+    exports main.snakegame;
 }

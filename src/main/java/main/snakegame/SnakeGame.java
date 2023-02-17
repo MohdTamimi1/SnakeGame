@@ -1,4 +1,4 @@
-package main.snakegameproject;
+package main.snakegame;
 
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
