@@ -143,11 +143,10 @@ public class SnakeGame extends Application {
         if (y == HEIGHT / CIRCLE_SIZE)
             y = 0;
 
-        Circle newCircle = new Circle(x, y);
 //        System.out.println(newCircle);
         // Check if the snake has collided with its own body
-        if (!snake.contains(newCircle)) {
-            snake.addLast(newCircle);
+        if (!snake.contains(new Circle(x, y))) {
+            snake.addLast(new Circle(x, y));
             // Check if the snake has eaten the fruit
             if (snakeHead.equals(fruit)) {
                 fruit = generateFruit();
