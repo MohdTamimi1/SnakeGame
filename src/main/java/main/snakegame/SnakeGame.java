@@ -21,7 +21,7 @@ public class SnakeGame extends Application {
     private static final int WIDTH = 700;
     private static final int HEIGHT = 500;
     private static final int CIRCLE_SIZE = 20;
-    private static final int SPEED_INCREMENT = 2;
+    private static final int SPEED_INCREMENT = 5;
 
     private final LinkedList<Circle> snake = new LinkedList<>();
     private Circle fruit;
@@ -80,7 +80,7 @@ public class SnakeGame extends Application {
     public void initialSetup() {
         direction = Direction.RIGHT;
         gameOver = false;
-        speed = 100;
+        speed = 140;
         score = 0;
 
         // Set initial snake size to 3 circles
@@ -143,7 +143,6 @@ public class SnakeGame extends Application {
         if (y == HEIGHT / CIRCLE_SIZE)
             y = 0;
 
-//        System.out.println(newCircle);
         // Check if the snake has collided with its own body
         if (!snake.contains(new Circle(x, y))) {
             snake.addLast(new Circle(x, y));
